@@ -9,7 +9,6 @@ const CardMovie = ({image, title}) => {
       </Card.Header>
       <Card.Body>
         <Card.Title style={{ fontSize: '14px' }}>{title}</Card.Title>
-        
       </Card.Body>
     </Card>
   )
