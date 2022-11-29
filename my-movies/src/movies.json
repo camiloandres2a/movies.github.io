@@ -1,5 +1,4 @@
-[
-    {
+[{
         "adult": false,
         "backdrop_path": "/hJuDvwzS0SPlsE6MNFOpznQltDZ.jpg",
         "genre_ids": [16, 12, 14, 10751, 28],
@@ -17,7 +16,7 @@
         "favorite": true
     },
     {
-        "adult": false,
+        "adult": true,
         "backdrop_path": "/gzJnMEMkHowkUndn9gCr8ghQPzN.jpg",
         "genre_ids": [53, 28, 18],
         "id": 793723,
@@ -85,7 +84,7 @@
         "favorite": false
     },
     {
-        "adult": false,
+        "adult": true,
         "backdrop_path": "/6TPZSJ06OEXeelx1U1VIAt0j9Ry.jpg",
         "genre_ids": [28, 80, 53],
         "id": 587996,
@@ -136,7 +135,7 @@
         "favorite": true
     },
     {
-        "adult": false,
+        "adult": true,
         "backdrop_path": "/vKzbIoHhk1z9DWYi8kyFe9Gg0HF.jpg",
         "genre_ids": [35],
         "id": 484718,
@@ -153,7 +152,7 @@
         "favorite": true
     },
     {
-        "adult": false,
+        "adult": true,
         "backdrop_path": "/lOSdUkGQmbAl5JQ3QoHqBZUbZhC.jpg",
         "genre_ids": [53, 28, 878],
         "id": 775996,
@@ -187,7 +186,7 @@
         "favorite": true
     },
     {
-        "adult": false,
+        "adult": true,
         "backdrop_path": "/7KL4yJ4JsbtS1BNRilUApLvMnc5.jpg",
         "genre_ids": [18, 53],
         "id": 649087,
@@ -204,7 +203,7 @@
         "favorite": true
     },
     {
-        "adult": false,
+        "adult": true,
         "backdrop_path": "/nz8xWrTKZzA5A7FgxaM4kfAoO1W.jpg",
         "genre_ids": [878, 28],
         "id": 651571,
@@ -221,7 +220,7 @@
         "favorite": false
     },
     {
-        "adult": false,
+        "adult": true,
         "backdrop_path": "/vfuzELmhBjBTswXj2Vqxnu5ge4g.jpg",
         "genre_ids": [53, 80],
         "id": 602269,
@@ -255,7 +254,7 @@
         "favorite": false
     },
     {
-        "adult": false,
+        "adult": true,
         "backdrop_path": "/jeAQdDX9nguP6YOX6QSWKDPkbBo.jpg",
         "genre_ids": [14, 28, 878],
         "id": 590706,
@@ -272,7 +271,7 @@
         "favorite": false
     },
     {
-        "adult": false,
+        "adult": true,
         "backdrop_path": "/fRrpOILyXuWaWLmqF7kXeMVwITQ.jpg",
         "genre_ids": [27, 53, 12, 9648],
         "id": 522444,
