@@ -61,7 +61,29 @@ function App() {
             )
         } <
         /Row> < /
-        Container > <
+        Container >
+        <
+        Container >
+        <
+        h1 style = {
+            { color: "white" }
+        } > Peliculas para Toda la familia < /h1> <
+        Row > {
+            MoviesJson.map(
+                movie => {
+                    if (movie.adult === false) {
+                        return <Col > < CardMovie image = { "https://image.tmdb.org/t/p/w300" + movie.poster_path }
+                        title = { movie.title }
+                        /></Col >
+                    }
+                }
+            )
+        } <
+        /Row> < /
+        Container >
+
+
+        <
         /div>
     );
 }
