@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="App">
       {" "}
-      <img src="./logoibero.png"/>
+      <img src={require('./logoibero.png')}/>
       <input
         type="text"
         name="buscador"
