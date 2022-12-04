@@ -6,24 +6,25 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
 function App() {
-  return (
-    <div className="App">
-      {" "}
-      <img src={require('./logoibero.png')}/>
-      <input
-        type="text"
-        name="buscador"
-        id="buscador"
-        placeholder="Buscar..."
-      ></input>
-      <ul id="listaPeliculas">
-        {MoviesJson.map((movie) => (
-          <li className="title"> {movie.original_title}</li>
-        ))}
-      </ul>
-      {document.addEventListener("keyup", (e) => {
-        if (e.target.matches("#buscador")) {
-          if (e.key === "Escape") e.target.value = "";
+    return (
+        <div className="App">
+            {" "}
+            <img src={require('/logoibero.png')}/>
+            <input type="text" name="buscador" id="buscador" placeholder="Buscar..."></input>
+            <ul id="listaPeliculas">
+                {
+                MoviesJson.map((movie) => (
+                    <li className="title">
+                        {
+                        movie.original_title
+                    }</li>
+                ))
+            } </ul>
+            {
+            document.addEventListener("keyup", (e) => {
+                if (e.target.matches("#buscador")) {
+                    if (e.key === "Escape") 
+                        e.target.value = "";
 
           document.querySelectorAll(".title").forEach((pelicula) => {
             pelicula.textContent
@@ -135,8 +136,10 @@ function App() {
                     })
                 }
                     {" "} </Row>
-                {" "} </Container>
-            {" "} </div>
+                {" "} 
+            </Container>
+            {" "} 
+        </div>
     );
 }
 export default App;
