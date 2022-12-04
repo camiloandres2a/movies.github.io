@@ -38,7 +38,7 @@
 }
 
 body{
-  background-color: #1d1e33 ;
+  background-color: #8b6f51 ;
 }
 .filtro{
   display: none;
@@ -56,7 +56,7 @@ input{
   margin-top: 20px;
   list-style: none;
   font-weight: 600;
-  color: #d16704;
+  color: #f0f17c;
   text-align: left;
 }
 section{

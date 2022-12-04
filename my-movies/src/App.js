@@ -9,32 +9,35 @@ function App() {
   return (
     <div className="App">
       {" "}
-      <input type="text" name="buscador" id="buscador" placeholder="Buscar..."></input>
+      <input
+        type="text"
+        name="buscador"
+        id="buscador"
+        placeholder="Buscar..."
+      ></input>
       <ul id="listaPeliculas">
-        {MoviesJson.map(movie =><li className="title" > {movie.original_title}</li>)}
+        {MoviesJson.map((movie) => (
+          <li className="title"> {movie.original_title}</li>
+        ))}
       </ul>
-      {
-      document.addEventListener("keyup", e=>{
+      {document.addEventListener("keyup", (e) => {
+        if (e.target.matches("#buscador")) {
+          if (e.key === "Escape") e.target.value = "";
 
-        if(e.target.matches("#buscador")){
-
-            if(e.key ==="Escape")e.target.value = ""
-
-            document.querySelectorAll(".title").forEach(pelicula =>{
-
-                pelicula.textContent.toLowerCase().includes(e.target.value.toLowerCase())
-                  ?pelicula.classList.remove("filtro")
-                  :pelicula.classList.add("filtro")
-            })
-
+          document.querySelectorAll(".title").forEach((pelicula) => {
+            pelicula.textContent
+              .toLowerCase()
+              .includes(e.target.value.toLowerCase())
+              ? pelicula.classList.remove("filtro")
+              : pelicula.classList.add("filtro");
+          });
         }
-
-})}
+      })}
       <Container>
         {" "}
         <h1
           style={{
-            color: "white",
+            color: "white"
           }}
         >
           {" "}
@@ -49,7 +52,7 @@ function App() {
                   {" "}
                   <CardMovie
                     image={
-                      "https://image.tmdb.org/t / p / w300 " + movie.poster_path
+                      "https://image.tmdb.org/t/p/w300" + movie.poster_path
                     }
                     title={movie.title}
                   />{" "}
@@ -71,7 +74,7 @@ function App() {
                   {" "}
                   <CardMovie
                     image={
-                      "https://image.tmdb.org/t / p / w300 " + movie.poster_path
+                      "https://image.tmdb.org/t/p/w300" + movie.poster_path
                     }
                     title={movie.title}
                   />{" "}
@@ -93,7 +96,7 @@ function App() {
                   {" "}
                   <CardMovie
                     image={
-                      "https://image.tmdb.org/t / p / w300 " + movie.poster_path
+                      "https://image.tmdb.org/t/p/w300" + movie.poster_path
                     }
                     title={movie.title}
                   />{" "}
@@ -118,7 +121,7 @@ function App() {
                   {" "}
                   <CardMovie
                     image={
-                      "https://image.tmdb.org/t / p / w300 " + movie.poster_path
+                      "https://image.tmdb.org/t/p/w300" + movie.poster_path
                     }
                     title={movie.title}
                   />{" "}
