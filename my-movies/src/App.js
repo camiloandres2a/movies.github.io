@@ -9,6 +9,7 @@ function App() {
   return (
     <div className="App">
       {" "}
+      <img src="./logoibero.png"/>
       <input
         type="text"
         name="buscador"
