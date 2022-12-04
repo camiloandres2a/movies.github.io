@@ -40,3 +40,30 @@
 body{
   background-color: #1d1e33 ;
 }
+.filtro{
+  display: none;
+}
+input{
+  width: 50vw;
+  padding: 10px;
+  outline: none;
+  border: 5px solid #CCD1E4;
+  font-weight: 600;
+}
+
+#listaPeliculas{
+  font-size: 20px;
+  margin-top: 20px;
+  list-style: none;
+  font-weight: 600;
+  color: #d16704;
+  text-align: left;
+}
+section{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
